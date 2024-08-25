@@ -68,28 +68,34 @@
           <!-- Card - 2 Rectangle -->
           <div class="card bg-base-100 w-96 shadow-xl py-8">
             <figure>
-              <img src="images/rectangle.png" alt="Triangle" />
+              <img src="images/rectangle.png" alt="Rectangle" />
             </figure>
             <div class="card-body space-y-3">
               <h2 class="font-bold text-center text-2xl">Rectangle</h2>
-              <p class="font-semibold text-center">Area(A) = 0.5 X b X h</p>
+              <p class="font-semibold text-center">Area(A) = w X l</p>
               <div class="flex items-center">
                 <input
+                  id="rectangle-width"
                   type="text"
-                  placeholder="b"
+                  placeholder="w"
                   class="bg-white p-3 rounded-3xl text-black font-semibold mr-1 w-1/2"
                 />
                 <span class="mr-2">cm</span>
                 <input
+                  id="rectangle-length"
                   type="text"
-                  placeholder="h"
+                  placeholder="l"
                   class="bg-white p-3 rounded-3xl text-black font-semibold mr-1 w-1/2"
                 />
                 <span class="">cm</span>
               </div>
+              <p class="text-2xl text-center font-medium">
+                Area: <span id="rectangle-area"></span
+                ><span>cm<sup>2</sup></span>
+              </p>
               <div class="card-actions">
                 <button
-                  onclick="triangleCalculation()"
+                  onclick="rectangleAreaCalculation()"
                   class="btn btn-primary w-full rounded-full"
                 >
                   Calculate
@@ -245,5 +251,6 @@
     <!-- =========================== -->
 
     <script src="js/triangle-calculation.js"></script>
+    <script src="js/rectangle-calculation.js"></script>
   </body>
 </html>
